@@ -1,0 +1,800 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------css reset----------*/
+body{
+	background-image: url(../images/pos4_cover-cc.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position:center top;
+	background-size: 2477px 850px;
+	text-align: justify;
+	background-color: #f4f4f4;
+	overflow-x: clip;
+}
+
+
+.wrapper{
+	width: 100%;
+}
+
+h1 a{
+	width: 240px;
+	height: 180px;
+	margin-top: 2%;
+	margin-left: 2%;
+	background: url(../images/second_h1.png) no-repeat;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header-box{
+	width: 100%;
+	height: 700px;
+}
+
+
+/*背景的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	body{
+		background-image: url(../images/pos4_cover.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position:left top;
+		background-size: 1200px 685px;
+		text-align: justify;
+		overflow-x: clip;
+	}
+
+	h1 a{
+		width: 180px;
+		height: 135px;
+		margin-top: 2%;
+		margin-left: 2%;
+		background: url(../images/second_h1-m.png) no-repeat;
+		display: block;
+		text-indent: 101%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.header-box{
+		width: 100%;
+		height: 630px;
+	}
+
+	.wrapper{
+		overflow: clip;
+	}
+
+}
+
+@media (max-width: 767px) {
+    body{
+		background-image: url(../images/pos4_cover.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position:left top;
+		background-size: 780px 445px;
+		text-align: justify;
+		overflow-x: clip;
+	}
+
+	h1 a{
+		width: 120px;
+		height: 90px;
+		margin-top: 2%;
+		margin-left: 2%;
+		background: url(../images/second_h1-s.png) no-repeat;
+		display: block;
+		text-indent: 101%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.header-box{
+		width: 100%;
+		height: 400px;
+	}
+
+	.wrapper{
+		overflow: clip;
+	}
+}
+
+
+
+/*-----Q&A內容樣式-------*/
+.QA-content{
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.frame-text{
+	width: 60%;
+	max-width: 1152px;
+    margin-bottom :30px;
+    background: rgba(255,255,255,0.85);
+    padding: 20px 25px;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+	position: relative;
+	display: flex;
+}
+
+.frame_txt_first{
+	margin-top: -190px;
+	display: inline-block;
+	position: relative;
+}
+
+h2 {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 140%;
+	line-height: 1.6rem;
+	font-weight: bold;
+	color: #373737;
+}
+
+.person-name{
+    text-align: center;
+}
+
+h4{
+	font-size: 95%;
+	border-top: 2px solid #e0755c;
+    display: inline-block;  /*加入這個才可以只有名字的寬度，不會占滿整個畫面*/
+	padding: 10px 10px 30px 10px;
+	line-height: 1.75rem;
+	font-weight: bold;
+	color: #373737;
+}
+
+.frame-text P{
+	font-size: 86%;
+    padding: 0px 40px;
+	line-height: 1.75rem;
+	color: #373737;
+}
+
+.o01{
+	position: absolute;
+	right: -30px;
+	top: -30px;
+}
+
+.o02{
+	position: absolute;
+	left: -50px;
+	bottom: -30px;
+}
+
+/*------第二個白區塊--------*/
+h3{
+	color: #898989;
+	margin: 15px 0;
+	font-size: 1.17rem;
+	line-height: 1.75rem;
+}
+
+.A-text{
+	line-height: 1.75rem;
+	color: #373737;
+}
+
+
+
+a{
+	color: #e0755c;
+	text-decoration: none;
+}
+
+a:hover{
+	color:#e60012;
+}
+
+.pp-1{
+	width: 10%;
+	position: absolute;
+	top: -20%;
+	right: -4%;
+	z-index: 999;
+}
+
+.QA-2-word{
+	margin-right: 5%;
+}
+
+/*------第三個白區塊--------*/
+.pp-2{
+	width: 25%;
+	position: absolute;
+	top: -25%;
+	left: -8%;
+	z-index: 999;
+}
+
+.box-3-word{
+	margin-left: 17%;
+	margin-right: 5%;
+}
+
+/*------第四個白區塊--------*/
+.pp-3{
+	width: 25%;
+	position: absolute;
+	top: -10%;
+	right: -2%;
+	z-index: 999;
+}
+
+.box-4-word{
+	margin-right: 22%;
+}
+
+/*------第五個白區塊--------*/
+.pp-4{
+	width: 25%;
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	z-index: 999;
+}
+
+.box-5-word{
+	margin-left: 17%;
+	margin-right: 22%;
+}
+
+/*------第六個白區塊--------*/
+.pp-5{
+	width: 10%;
+	position: absolute;
+	top: -13%;
+	right: -5%;
+	z-index: 999;
+}
+
+.box-6-word{
+	margin-left: 17%;
+	margin-right: 6%;
+}
+
+/*Q&A的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.frame-text{
+		width: 77%;
+	}
+
+	.o01{
+		position: absolute;
+		right: -20px;
+		top: -60px;
+	}
+	/*----第二格------*/
+	.pp-1{
+		width: 16%;
+		position: absolute;
+		top: -25%;
+		right: 0;
+		z-index: 999;
+	}
+	
+	.QA-2-word{
+		margin-right: 15%;
+	}
+	/*----第三格------*/
+	.pp-2{
+		width: 30%;
+		position: absolute;
+		top: 10%;
+		left: -2%;
+		z-index: 999;
+	}
+	
+	.box-3-word{
+		margin-left: 30%;
+		margin-right: 15%;
+	}
+	/*------第四個白區塊--------*/
+	.pp-3{
+		width: 30%;
+		position: absolute;
+		top: -20%;
+		right: -1%;
+		z-index: 999;
+	}
+
+	.box-4-word{
+		margin-right: 22%;
+	}
+	/*------第五個白區塊--------*/
+	.pp-4{
+		width: 31%;
+		position: absolute;
+		top: -10%;
+		left: -1%;
+		z-index: 999;
+	}
+
+	.box-5-word{
+		margin-left: 33%;
+		margin-right: 0;
+	}
+	/*------第六個白區塊--------*/
+	.pp-5{
+		width: 18%;
+		position: absolute;
+		top: -13%;
+		right: 2%;
+		z-index: 999;
+	}
+
+	.box-6-word{
+		margin-left: 0;
+		margin-right:0;
+	}
+
+	.box-6-word h3{
+		margin-left: 33%;
+		margin-right:22%;
+	}
+
+	.box-6-word .A-text{
+		margin-right:22%;
+	}
+
+}
+
+
+@media (max-width: 767px) {
+	.frame_txt_first{
+		margin-top: -110px;
+		display: inline-block;
+		position: relative;
+	}
+
+	.frame_txt_first p{
+		font-size: 86%;
+		padding: 0px 20px;
+		line-height: 1.4rem;
+		color: #373737;
+	}
+	
+	.frame-text{
+		width: 77%;
+		margin-bottom :30px;
+		padding: 20px 20px;
+	}
+
+	.o01{
+		position: absolute;
+		right: -10px;
+		top: -85px;
+	}
+
+	.o02{
+		position: absolute;
+		left: -90px;
+		bottom: -40px;
+	}
+
+	/*----第二格------*/
+	h3{
+		color: #898989;
+		margin: 10px 0;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.A-text{
+		font-size: 92%;
+		line-height: 1.5rem;
+		color: #373737;
+	}
+	
+	.pp-1{
+		width: 17%;
+		position: absolute;
+		top: -4%;
+		right: -1%;
+		z-index: 999;
+	}
+	
+	.QA-2-word{
+		margin-right: 18%;
+	}
+	/*----第三格------*/
+	.pp-2{
+		width: 30%;
+		position: absolute;
+		top: -5%;
+		left: -2%;
+		z-index: 999;
+	}
+	
+	.box-3-word{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.box-3-word h3{
+		margin-left: 32%;
+		margin-right: 0;
+	}
+	/*------第四個白區塊--------*/
+	.pp-3{
+		width: 30%;
+		position: absolute;
+		top: -18%;
+		right: -1%;
+		z-index: 999;
+	}
+
+	.box-4-word{
+		margin-right: 0;
+	}
+
+	.box-4-word h3{
+		margin-right: 22%;
+	}
+	/*------第五個白區塊--------*/
+	.pp-4{
+		width: 31%;
+		position: absolute;
+		top:unset;
+		bottom: -2%;
+		left: -1%;
+		z-index: 999;
+	}
+
+	.box-5-word{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.box-5-word h3{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.box-5-word .A-text{
+		margin-left: 33%;
+		margin-right: 0;
+	}
+	/*------第六個白區塊--------*/
+	.pp-5{
+		width: 20%;
+		position: absolute;
+		top: unset;
+		bottom: -5%;
+		right: -1%;
+		z-index: 999;
+	}
+
+	.box-6-word{
+		margin-left: 0;
+		margin-right:0;
+	}
+
+	.box-6-word h3{
+		margin-left: 0;
+		margin-right:0;
+	}
+
+	.box-6-word .A-text{
+		margin-right:23%;
+	}
+}
+
+
+
+/*------------更多閱讀分享的樣式--------------*/
+.more{
+	display: flex;
+	justify-content: center;
+	background-color: #eeeeee;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+.more a{
+	display: block;
+	max-width: 80%;
+}
+
+.more img{
+	width: 100%;
+}
+
+/*------更多閱讀分享的媒體查詢-------*/
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	.more{
+		padding-top: 5px;
+	}
+}
+
+/*------四本書區塊樣式-------*/
+.book-intro{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+	background-color: #f4f4f4;
+}
+
+.books{
+	display: flex;
+	width: 60%;
+	justify-content: space-between;
+}
+
+.books li{
+	width: 22%;
+}
+
+.books img{
+	width: 100%;
+	border: #e1dddd 1px solid;
+	margin-bottom: 10px;
+} 
+
+.books p{
+	text-align: center;
+	color: #e0755c;
+	line-height: 1.3rem;
+}
+
+.books li:hover{
+	opacity: 0.8;
+}
+
+.books p:hover{
+	color:#e60012;
+}
+/*------四本書區塊的媒體查詢-------*/
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.books{
+		width: 90%;
+	}
+}
+
+@media (max-width: 767px) {
+	.books{
+		flex-wrap: wrap;
+		width: 90%;
+	}
+
+	.books li{
+		width: 48%;
+		margin-bottom: 30px;
+	}
+}
+
+/*-----書下面的橫條banner樣式------*/
+.ad-1{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: #f4f4f4;
+	box-sizing: border-box;
+}
+.ad-2{
+	display: none;
+}
+
+.ad-1 a{
+	display: block;
+	max-width: 90%;
+}
+
+.ad-2 a{
+	display: block;
+	max-width: 90%;
+}
+
+.ad-1 img{
+	width: 100%;
+	display: inline-block;
+    border: 1px dotted #cb5033;
+    padding: 15px;
+    background: #fff;
+	box-sizing: border-box;
+}
+
+.ad-2 img{
+	width: 100%;
+	display: inline-block;
+    border: 1px dotted #cb5033;
+    padding: 15px;
+    background: #fff;
+	box-sizing: border-box;
+}
+
+
+/*書下面橫條banner的媒體查詢*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+	.ad-1{
+		display: none;
+	}
+	.ad-2{
+		display: flex;
+		justify-content: center;
+		padding: 0 0 25px;
+		background-color: #f4f4f4;
+	}
+
+
+	.ad-2 a{
+	display: block;
+	max-width: 80%;
+}
+}
+
+
+/*------最下面的人物列表區塊--------*/
+.person-list{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	padding: 30px 0;
+}
+
+.person-list li{
+	width: 12.5%;
+}
+
+.person-list li:hover{
+	opacity: 80%;
+}
+
+.person-list img{
+	width: 100%;
+}
+
+.bottom-link{
+	width: 100%;
+	background-color: #bababa;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.copyright{
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	padding-bottom: 30px;
+}
+
+.copyright div{
+	font-size: 80%;
+	line-height: 1.15rem;
+    padding: 3px 20px;
+    color: gray;
+}
+
+.copyright a{
+	display: block;
+}
+
+.copyright img{
+	width: 100%;
+}
+
+/*------最下面人物列表的媒體查詢--------*/
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.person-list{
+		width: 90%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.person-list li{
+		width: 22%;
+	}
+}
+
+@media (max-width: 767px) {
+	.person-list{
+		width: 90%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.person-list li{
+		width: 48%;
+	}
+
+	.copyright{
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		padding-bottom: 30px;
+	}
+}
